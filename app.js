@@ -96,7 +96,7 @@ function renderJson(json1) {
         productsEl.innerHTML += `
         <div class="col-6 col-md-6 col-lg-4 mb-3">
         <div class="card h-100">
-        <img src="${productImage}" class="card-img"  alt="${productTitle}" style="height: 300px; width: 100%; object-fit: contain;>
+        <img src="${productImage}" class="productItem card-img"  alt="${productTitle}" style="height: 300px; width: 100%; object-fit: contain;>
         
         <div class="card-img-overlay">
         <img src="add-to-cart.png" class="float-end rounded-circle rounded-circle2 bg-dark-subtle position-absolute top-0 end-0"" id='a1' role="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
