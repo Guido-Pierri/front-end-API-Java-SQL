@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men's Clothing</title>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="p-3 border-0 bd-example" width="100%">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid d-flex justify-content-between">
+            <a class="navbar-brand" href="index.html">
+                <img width="60" src="./oasis.png" alt=""> Online Oasis</a>
+            <!-- <div class="collapse navbar-collapse" id="navbarTogglerDemo02"> -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Categories
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a id="men" class="dropdown-item" href="category-mens.html">Men's clothing</a></li>
+                        <li><a id="women" class="dropdown-item" href="category-womens.html">Women's clothing</a>
+                        </li>
+                        <li><a id="jewelery" class="dropdown-item" href="category-jewelery.html">Jewelery</a></li>
+                        <li><a id="electronics" class="dropdown-item" href="category-electronics.html">Electronics</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section id="main-section" class="text-center mt-5">
+        <h2>Men's Clothing</h2>
+        <article id="products" class="card-group border border-0">
+
+        </article>
+    </section>
+    <br>
+    <section class="visually-hidden d-flex " id="basket">
+        <div class="d-flex align-items-center justify-content-evenly">
+            <h1 class="text-center d-flex">Your shopping bag</h1>
+            <div class="d-flex position-relative" id="carticon">
+                <a href="/checkout.html" style="padding: 0;">
+                    <img width="60" src="./shopping-bag.png" alt="cart" class="d-flex justify-content-start">
+                </a>
+                <div id="totalitemsincart"
+                    class="navbar-brand position-absolute top-50 start-50 translate-middle text-wrap fs-6"
+                    style="padding-top: 20px;"></div>
+            </div>
+
+        </div>
+        <table class="table table-borderless">
+            <thead>
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Item</th>
+                    <th scope="col">Price</th>
+                    <th scope="col"></th>
+                    <th scope="col">Quantity</th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody id="basketlist">
+            </tbody>
+        </table>
+        <div id="subtotal" class="d-flex flex-column-reverse justify-content-between  mb-2">
+        </div>
+
+    </section>
+    </section>
+    <section id="modal">
+    </section>
+    <script src="app-category-mens.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

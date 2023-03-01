@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Basket</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="p-3 border-0 bd-example">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid d-flex justify-content-between">
+            <a class="navbar-brand" href="index.html">
+                <img width="60" src="./oasis.png" alt=""> Online Oasis</a>
+            <!-- <div class="collapse navbar-collapse" id="navbarTogglerDemo02"> -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Categories
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a id="men" class="dropdown-item" href="category-mens.html">Men's clothing</a></li>
+                        <li><a id="women" class="dropdown-item" href="category-womens.html">Women's clothing</a>
+                        </li>
+                        <li><a id="jewelery" class="dropdown-item" href="category-jewelery.html">Jewelery</a></li>
+                        <li><a id="electronics" class="dropdown-item" href="category-electronics.html">Electronics</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section>
+    <h1 id="h2">Please register to check out</h2>
+    <form class="was-validated">
+        <label for="username">First and Last Name</label><br>
+        <input type="text" name="username" id="username" class="form-control is-invalid" required>
+        <br>
+        <label for="email">Email</label>
+        <br>
+        <input type="email" name="email" id="email" class="form-control is-invalid" required>
+        <br>
+        <label for="adress1">Enter your street name and number</label>
+        <br>
+        <input type="text" name="adress1" id="adress1" class="form-control is-invalid" required>
+        <br>
+        <label for="adress2">Postal code</label>
+        <br>
+        <input type="text" name="adress2" id="adress2" class="form-control is-invalid" required>
+        <br>
+        <label for="adress3">City</label>
+        <br>
+        <input type="text" name="adress3" id="adress3" class="form-control is-invalid" required>
+        <br>
+        <label for="adress4">Country</label>
+        <br>
+        <input type="text" name="adress4" id="adress4" class="form-control is-invalid" required>
+        <br><br>
+        <p>Shipping method</p>
+        <div class="form-check" id="radio">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" value="PostNord" id="flexRadioDefault1"
+                checked>
+            <label class="form-check-label" for="flexRadioDefault1">
+                PostNord
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" value="DHL" id="flexRadioDefault2">
+            <label class="form-check-label" for="flexRadioDefault2">
+                DHL
+            </label>
+        </div>
+    </form>
+    
+    <section class="d-flex flex-column" id="basket">
+        <div class="d-flex align-items-center justify-content-evenly">
+            <h1 class="text-center d-flex">Your shopping bag</h1>
+            <div class="d-flex position-relative" id="carticon">
+                <a style="padding: 0;">
+                    <img width="60" src="./shopping-bag.png" alt="cart" class="d-flex justify-content-start">
+                </a>
+                <div id="totalitemsincart"
+                    class="navbar-brand position-absolute top-50 start-50 translate-middle text-wrap fs-6"
+                    style="padding-top: 20px;"></div>
+            </div>
+    
+        </div>
+        <table class="table table-borderless">
+            <thead>
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Item</th>
+                    <th scope="col">Price</th>
+                    <th scope="col"></th>
+                    <th scope="col">Quantity</th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody id="basketlist">
+            </tbody>
+        </table>
+        <div id="subtotal" class="d-flex flex-column-reverse justify-content-between  mb-2">
+        </div>
+    
+    </section>
+    
+    <!-- <button type="button" class="btn btn btn-secondary" id="sendButton">Send your order</button> -->
+        <a><button id="sendButton" class="btn btn-secondary p-1 h-100 w-100 rounded-0"><b><em>Send your order</em></b></button></a> 
+
+    <!-- <script src="app.js"></script> -->
+    <script src="app-checkout.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
