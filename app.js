@@ -103,7 +103,7 @@ function renderJson(json1) {
          aria-controls="offcanvasWithBothOptions" onclick="addToCart(${productId}); showBasket()">
         <div class="card-body m-0 mb-0">
         <div class="card-title">
-        <p class="card-text text-truncate" style="max-width: 150px;"><b>${productTitle}</b></p>
+        <p class="card-text text-truncate" style="max-width: 150px;"><b id="title[i+1]">${productTitle}</b></p>
         <div class="d-inline-flex ustify-content-between">
         <p><b>$${price}</b></p>
         
