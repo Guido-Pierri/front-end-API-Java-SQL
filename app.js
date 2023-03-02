@@ -105,7 +105,7 @@ function renderJson(json1) {
         <div class="card-title">
         <p class="card-text text-truncate" style="max-width: 150px;"><b>${productTitle}</b></p>
         <div class="d-inline-flex ustify-content-between">
-        <p><b>${price} $.</b></p>
+        <p><b>$${price}</b></p>
         
          </div>
          </div>
