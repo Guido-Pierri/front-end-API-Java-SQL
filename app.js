@@ -86,8 +86,8 @@ function renderJson(json1) {
         //let rate = products[i].rating.rate;
         //let count = products[i].rating.count;
 
-        let price = products[i].price * localStorage.getItem("USD");
-        price = price.toFixed(0);
+        let price = products[i].price;
+        
         let productId = products[i].id;
         // console.log("json:",jsonobject);
         // console.log("values: ", values);
@@ -105,7 +105,7 @@ function renderJson(json1) {
         <div class="card-title">
         <p class="card-text text-truncate" style="max-width: 150px;"><b>${productTitle}</b></p>
         <div class="d-inline-flex ustify-content-between">
-        <p><b>${price} kr.</b></p>
+        <p><b>${price} $.</b></p>
         
          </div>
          </div>
