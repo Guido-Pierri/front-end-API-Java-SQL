@@ -93,7 +93,7 @@ function renderJson(json1) {
 
         if (category === "jewelery") {
             productsEl.innerHTML += `
-            <div class="card-group border-white flex-column m-5 justify-content-center" style="align-items: flex-start;" >
+            <div class="product card-group border-white flex-column m-5 justify-content-center" style="align-items: flex-start;" >
             <div class='card border-0'>
             <img class="card-img-top img-fluid" src="${productImage}">
             <div class="card-img-overlay">
